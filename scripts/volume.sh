@@ -5,7 +5,7 @@ notify_vol() {
     mute=$(wpctl get-volume @DEFAULT_AUDIO_SINK@ | grep -c MUTED)
 
     if [ "$mute" -eq 1 ]; then
-        notify-send -a "Volume" -u low -h string:x-dunst-stack-tag:volume -t 1500 "Звук выключен"
+        notify-send -a "Volume" -u low -h string:x-dunst-stack-tag:volume -t 1500 "Sound on"
     else
         notify-send -a "Volume" -u low -h string:x-dunst-stack-tag:volume -h int:value:"$vol" -t 1500 "Volume: ${vol}%"
     fi
