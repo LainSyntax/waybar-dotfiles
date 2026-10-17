@@ -22,7 +22,6 @@ notify_mic() {
 
 case $1 in
     up)
-        # Ограничиваем громкость до 100% (-l 1.0)
         wpctl set-volume -l 1.0 @DEFAULT_AUDIO_SINK@ 5%+
         notify_vol
         ;;
