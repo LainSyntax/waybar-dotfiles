@@ -1,27 +1,22 @@
 #!/bin/bash
 
-# Функция отправки уведомления для динамиков
 notify_vol() {
-    # Получаем чистые цифры громкости
     vol=$(wpctl get-volume @DEFAULT_AUDIO_SINK@ | awk '{print int($2*100)}')
-    # Проверяем, есть ли статус [MUTED]
     mute=$(wpctl get-volume @DEFAULT_AUDIO_SINK@ | grep -c MUTED)
 
     if [ "$mute" -eq 1 ]; then
         notify-send -a "Volume" -u low -h string:x-dunst-stack-tag:volume -t 1500 "Звук выключен"
     else
-        # Передаем hint 'value', чтобы Mako нарисовал прогресс-бар
-        notify-send -a "Volume" -u low -h string:x-dunst-stack-tag:volume -h int:value:"$vol" -t 1500 "Громкость: ${vol}%"
+        notify-send -a "Volume" -u low -h string:x-dunst-stack-tag:volume -h int:value:"$vol" -t 1500 "Volume: ${vol}%"
     fi
 }
 
-# Функция отправки уведомления для микрофона
 notify_mic() {
     mute=$(wpctl get-volume @DEFAULT_AUDIO_SOURCE@ | grep -c MUTED)
     if [ "$mute" -eq 1 ]; then
-        notify-send -a "Microphone" -u low -h string:x-dunst-stack-tag:mic -t 1500 "Микрофон выключен"
+        notify-send -a "Microphone" -u low -h string:x-dunst-stack-tag:mic -t 1500 "Mic off"
     else
-        notify-send -a "Microphone" -u low -h string:x-dunst-stack-tag:mic -t 1500 "Микрофон включен"
+        notify-send -a "Microphone" -u low -h string:x-dunst-stack-tag:mic -t 1500 "Mic on"
     fi
 }
 
