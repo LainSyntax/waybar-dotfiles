@@ -1,0 +1,36 @@
+#custom-system-icon {
+    color: #c0caf5;
+    font-size: 24px;
+    background: #272822;
+    border-radius: 6px;
+    margin: 8px 4px;
+    padding: 0 12px 0 10px;
+    transition: all 0.2s;
+}
+
+#custom-system-icon:hover {
+    color: #0d0d0c;
+    background: #c0caf5;
+}
+
+#temperature,
+#cpu,
+#memory {
+    color: #75715e;
+    background: #272822;
+    border-radius: 6px;
+    margin: 8px 2px;
+    padding: 0 4px;
+}
+
+#temperature.warning,
+#cpu.warning,
+#memory.warning {
+color: #fd971f;
+}
+
+#temperature.critical,
+#cpu.critical,
+#memory.critical {
+color: #f92672;
+}

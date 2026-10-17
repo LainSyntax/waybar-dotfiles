@@ -1,0 +1,30 @@
+{
+  "include":"/home/lkdl/.config/waybar/modules/*.jsonc",
+
+  "layer": "top",
+  "position": "top",
+  "exclusive": true,
+
+  "modules-left": [
+    "custom/arch",
+    "custom/separator",
+    "hyprland/workspaces",
+    "custom/separator",
+    "group/storage",
+    "group/system",
+
+  ],
+  "modules-center": [
+    "clock"
+  ],
+  "modules-right": [
+    "group/player",
+    "/custom/separator",
+    "group/audio",
+    "hyprland/language",
+    "group/connections",
+    "bluetooth",
+    "tray",
+    "custom/wlogout",
+  ],
+}

@@ -1,0 +1,13 @@
+#clock {
+    color: #c0caf5;
+    font-size: 22px;
+    background: #272822;
+    border-radius: 6px;
+    margin: 8px 4px;
+    padding: 0 10px;
+}
+
+#clock:hover {
+    color: #0d0d0c;
+    background: #c0caf5;
+}

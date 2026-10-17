@@ -1,0 +1,25 @@
+#network.icon {
+    color: #73daca;
+    font-size: 14px;
+    background: #272822;
+    border-radius: 6px;
+    margin: 8px 4px;
+    padding: 0 15px 0 12px;
+    transition: all 0.2s;
+}
+
+#network.icon:hover {
+    color: #0d0d0c;
+    background: #73daca;
+}
+
+#network.speed {
+    color: #75715e;
+    font-size: 14px;
+    background: #272822;
+    border-radius: 6px;
+    margin: 8px 4px;
+    padding: 0 14px 0 10px;
+    min-width: 170px;
+    transition: all 0.2s;
+}

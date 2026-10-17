@@ -1,0 +1,14 @@
+#bluetooth {
+    color: #6699ff;
+    font-size: 14px;
+    background: #272822;
+    border-radius: 6px;
+    margin: 8px 4px;
+    padding: 0 13px;
+    transition: all 0.2s;
+}
+
+#bluetooth:hover {
+    color: #0d0d0c;
+    background: #6699ff;
+}

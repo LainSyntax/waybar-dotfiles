@@ -1,0 +1,36 @@
+{
+    "hyprland/workspaces": {
+	"format": "{icon} {windows}",
+	"persistent-workspaces": {
+	    "*": 4
+	},
+	"window-rewrite-default": "󰊠",
+	"window-rewrite": {
+	    "kitty": "󰆍",
+	    "onlyoffice": "󰏆",
+	    "firefox": "",
+	    "code": "󰨞",
+	    "Happ": "󰯄",
+	    "Telegram": "",
+	    "discord": "",
+	    "spotify": "",
+	    "org.qbittorrent.qBittorrent": "󰘿",
+	    "thunar": "",
+	    "qview": "󰄄",
+	    "org.gnome.FileRoller": "",
+	    "mpv": "󰕼",
+	    "pavucontrol": "󱕂",
+	    "nm-connection-editor": "󰐻",
+	    "nwg-look": "󰒓",
+	    "steam": "󰓓",
+	    "dota2": "",
+	    "cs2": "",
+	    "squad": ""
+	},
+	"format-icons": {
+	    "default": ""
+	},
+	"show-special": true,
+	"all-outputs": true
+    }
+}

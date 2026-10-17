@@ -1,0 +1,33 @@
+#workspaces {
+    margin: 2px 0;
+}
+
+#workspaces button {
+    color: #75715e;
+    background: #272822;
+    padding: 0 10px 0 0;
+    margin: 8px 2px;
+    border-radius: 6px;
+    min-width: 40px;
+    transition: all 0.2s;
+}
+
+#workspaces button.active {
+    color: #1e1f1c;
+    background: #c0caf5;
+}
+
+#workspaces button:hover {
+    color: #0d0d0c;
+    background: #aab7f2;
+}
+
+#workspaces button.special {
+    color: #1e1f1c;
+    background-color: #d1c0f5;
+}
+
+#workspaces button.special:hover {
+    color: #0d0d0c;
+    background-color: #c1aaf2;
+}

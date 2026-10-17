@@ -1,0 +1,29 @@
+{
+    "group/connections": {
+        "orientation": "horizontal",
+        "drawer": {
+            "transition-duration": 300,
+            "transition-left-to-right": false,
+	    "click-to-reveal": true
+        },
+        "modules": [
+            "network#icon",
+            "network#speed"
+        ]
+    },
+
+    "network#icon": {
+        "format-wifi": "",
+        "format-ethernet": "󰈀",
+        "format-disconnected": "󰈂",
+        "tooltip-format-wifi": "WiFi: {essid} ({signalStrength}%)\nIP: {ipaddr}",
+        "tooltip-format-ethernet": "Ethernet: {ifname}\nIP: {ipaddr}",
+        "tooltip-format-disconnected": "Нет интернета"
+    },
+
+    "network#speed": {
+        "format": " ⇣{bandwidthDownBytes} ⇡{bandwidthUpBytes} ",
+        "interval": 2,
+        "tooltip": false
+    }
+}

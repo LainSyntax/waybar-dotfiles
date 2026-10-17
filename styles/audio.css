@@ -1,0 +1,41 @@
+#pulseaudio:not(.microphone) {
+    color: #c0caf5;
+    font-size: 14px;
+    background: #272822;
+    border-radius: 6px;
+    margin: 8px 2px;
+    padding: 0px 4px;
+    min-width: 50px;
+    transition: all 0.2s;
+}
+
+#pulseaudio:hover {
+    color: #0d0d0c;
+    background: #c0caf5;
+}
+
+#pulseaudio.microphone {
+    color: #c0caf5;
+    font-size: 14px;
+    background: #272822;
+    border-radius: 6px;
+    margin: 8px 2px;
+    padding: 0px 14px;
+    transition: all 0.2s;
+}
+
+#pulseaudio.microphone:hover {
+    color: #0d0d0c;
+    background: #c0caf5;
+}
+
+#pulseaudio.microphone.source-muted,
+#pulseaudio:not(.microphone).muted {
+    color: #f92672;
+}
+
+#pulseaudio.microphone.source-muted:hover,
+#pulseaudio:not(.microphone).muted:hover {
+    color: #0d0d0c;
+    background: #f92672;
+}

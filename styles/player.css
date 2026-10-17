@@ -1,0 +1,44 @@
+#custom-prev {
+    color: #ffffff;
+    font-size: 18px;
+    background: #272822;
+    border-radius: 12px;
+    margin: 8px 2px 8px 4px;
+    padding: 6px 0 6px 10px;
+    transition: all 0.2s;
+}
+
+#custom-prev:hover {
+    color: #0d0d0c;
+    background: #ffffff;
+}
+
+#mpris {
+    color: #80b418;
+    font-size: 13px;
+    background: #272822;
+    border-radius: 6px;
+    margin: 8px 2px;
+    padding: 0 6px 0 8px;
+    transition: all 0.2s;
+}
+
+#mpris:hover {
+    color: #0d0d0c;
+    background: #709d15;
+}
+
+#custom-next {
+    color: #ffffff;
+    font-size: 18px;
+    background: #272822;
+    border-radius: 12px;
+    margin: 8px 4px 8px 2px;
+    padding: 6px 10px 6px 0px;
+    transition: all 0.2s;
+}
+
+#custom-next:hover {
+    color: #0d0d0c;
+    background: #ffffff;
+}

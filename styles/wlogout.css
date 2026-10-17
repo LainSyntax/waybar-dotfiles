@@ -1,0 +1,13 @@
+#custom-wlogout {
+    color: #f92672;
+    background: #272822;
+    border-radius: 6px;
+    margin: 8px 4px;
+    padding: 0 15px 0 12px;
+    transition: all 0.2s;
+}
+
+#custom-wlogout:hover {
+    color: #0d0d0c;
+    background: #f92672;
+}

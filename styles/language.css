@@ -1,0 +1,14 @@
+#language {
+    color: #c0caf5;
+    font-size: 14px;
+    background: #272822;
+    border-radius: 6px;
+    margin: 8px 4px;
+    padding: 0px 8px;
+    transition: all 0.2s;
+}
+
+#language:hover {
+    color: #0d0d0c;
+    background: #c0caf5;
+}

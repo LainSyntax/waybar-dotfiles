@@ -1,0 +1,44 @@
+{
+    "group/player": {
+        "orientation": "horizontal",
+        "modules": [
+            "custom/prev",
+            "mpris",
+            "custom/next"
+        ]
+    },
+
+    "custom/prev": {
+        "format": "{} ",
+        "exec": "if playerctl status >/dev/null 2>&1; then echo '󰒮'; fi",
+        "interval": 2,
+        "on-click": "playerctl previous",
+        "tooltip": false
+    },
+
+    "mpris": {
+        "format": "{player_icon} {artist} - {title}",
+        "format-paused": "{status_icon} <i>{artist} - {title}</i>",
+	"max-length": 5,
+        "player-icons": {
+            "default": "",
+            "spotify": "",
+            "firefox": "",
+            "chromium": "",
+            "telegram": ""
+        },
+        "status-icons": {
+            "paused": "⏸"
+        },
+        "max-length": 40,
+        "tooltip-format": "{player} ({status}) - {dynamic}"
+    },
+
+    "custom/next": {
+        "format": " {}",
+        "exec": "if playerctl status >/dev/null 2>&1; then echo '󰒭'; fi",
+        "interval": 2,
+        "on-click": "playerctl next",
+        "tooltip": false
+    }
+}

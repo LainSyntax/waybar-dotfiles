@@ -1,0 +1,61 @@
+{
+    "group/storage": {
+	"orientation": "horizontal",
+	"drawer": {
+	    "transition-duration": 300,
+	    "transition-left-to-right": true,
+	    "click-to-reveal": true
+	},
+	"modules": [
+	    "custom/storage-icon",
+	    "disk#root",
+	    "disk#home",
+	    "disk#data"
+	]
+    },
+
+    "custom/storage-icon": {
+	"format": "󰋊",
+	"tooltip": false,
+    },
+
+    "disk#root": {
+	"interval": 60,
+	"format": "/: {free}",
+	"path": "/",
+        "states": {
+            "warning": 80,
+            "critical": 90
+        }
+    },
+
+    "disk#home": {
+	"interval": 60,
+	"format": "~: {free}",
+	"path": "/home",
+        "states": {
+            "warning": 80,
+            "critical": 90
+        }
+    },
+
+    "disk#mount": {
+	"interval": 60,
+	"format": "󰋊 {free}",
+	"path": "/mnt/disk",
+        "states": {
+            "warning": 80,
+            "critical": 90
+        }
+    },
+
+    "disk#data": {
+	"interval": 60,
+	"format": "󰋊 {free}",
+	"path": "/mnt/data",
+        "states": {
+            "warning": 80,
+            "critical": 90
+        }
+    }
+}
